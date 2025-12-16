@@ -1,5 +1,4 @@
 # vrs_assignment_intelligent_garage
-# Inteligentná garáž
 
 ## Popis projektu
 
@@ -22,11 +21,7 @@ Riešenie podporuje:
   Poskytuje spätnú väzbu pre používateľa a zobrazuje textové informácie o stave garáže.
 
 * **Senzor polohy garážových dverí**
-  Slúži na detekciu stavu dverí (otvorené / zatvorené). Možné riešenia:
-
-  * magnetický senzor,
-  * kapacitný senzor,
-  * mechanické tlačidlo.
+  Slúži na detekciu stavu dverí (otvorené / zatvorené).
 
 * **Senzory prítomnosti vozidla**
   Dva senzory – jeden umiestnený **vnútri garáže** a jeden **pred garážou**. Slúžia na detekciu prítomnosti vozidla (predpokladané riešenie: ultrazvukové senzory).
@@ -92,19 +87,6 @@ Systém nepretržite sleduje stav senzorov a reaguje podľa aktuálnej situácie
 
 ## Záznam dát
 
-Každý prejazd vozidla (vjazd alebo výjazd) je zaznamenaný na SD kartu. Tieto údaje je možné použiť na:
+Každý prejazd vozidla (vjazd alebo výjazd) je zaznamenaný do .csv periodicky posielaneho na SD kartu.
 
-* neskoršiu analýzu,
-* evidenciu prejazdov,
-* rozšírenie systému o ďalšie funkcie.
-
----
-
-## Poznámky k rozšíreniu
-
-Systém je navrhnutý modulárne a umožňuje budúce rozšírenia, napríklad:
-
-* bezdrôtové ovládanie,
-* mobilnú aplikáciu,
-* identifikáciu vozidla (RFID, Bluetooth, ŠPZ).
 
