@@ -1,0 +1,18 @@
+!SESSION 2026-01-08 11:55:31.306 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=sk_SK
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Matus\School\ZS_2526\VRS\Semestrálne zadanie\vrs_assignment_intelligent_garage
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-01-08 11:55:35.745
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-01-08 11:55:35.745
+!MESSAGE Log4j2 initialized with config file C:\Matus\School\ZS_2526\VRS\Semestrálne zadanie\vrs_assignment_intelligent_garage\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-01-08 11:55:38.037
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-08 12:00:00.417
+!MESSAGE Indexed 'intelligent_garage' (19 sources, 81 headers) in 2.27 sec: 4,758 declarations; 24,788 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0068%)
