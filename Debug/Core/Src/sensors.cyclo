@@ -1,0 +1,5 @@
+../Core/Src/sensors.c:10:13:delay_us	2
+../Core/Src/sensors.c:16:10:HCSR04_Read_Distance	3
+../Core/Src/sensors.c:37:6:Sensor_Init	1
+../Core/Src/sensors.c:43:6:Sensor_Update	9
+../Core/Src/sensors.c:63:13:Sensor_GetCarPosition	1

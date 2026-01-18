@@ -1,0 +1,4 @@
+../Core/Src/motor.c:18:13:Raw_Move_Open	8	static
+../Core/Src/motor.c:24:13:Raw_Move_Close	8	static
+../Core/Src/motor.c:32:6:Motor_Init	8	static
+../Core/Src/motor.c:38:6:Motor_Process	16	static
