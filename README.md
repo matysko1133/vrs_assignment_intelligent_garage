@@ -11,6 +11,13 @@ Riešenie podporuje:
 * záznam dát o vjazdoch a výjazdoch vozidla do/z garáže.
 
 ---
+# Dôležité!
+
+## Build project
+
+Projekt je rozdelený na 2 "podprojekty", 1 je pre STM s displejom (**display_uart_receiver**) a druhý je pre hlavnú logiku (**garage_uart_sender**). Najprv sa vyčistí, zbuilduje a nahrá sender, pričom STM s LCD zostáva nezapojené, potom sa zbuilduje a nahrá kód pre LCD displej.
+
+---
 
 ## Hardvérové riešenie (HW)
 
@@ -88,5 +95,3 @@ Systém nepretržite sleduje stav senzorov a reaguje podľa aktuálnej situácie
 ## Záznam dát
 
 Každý prejazd vozidla (vjazd alebo výjazd) je zaznamenaný do .csv periodicky posielaneho na SD kartu.
-
-

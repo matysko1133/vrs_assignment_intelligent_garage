@@ -1,0 +1,14 @@
+#include "fatfs.h"
+#include <stdio.h>
+#include <string.h>
+
+FATFS fs; //File system
+FIL fil; //File
+FRESULT fres; //Result Ok/Error
+
+uint8_t OPEN_SOURCE = 0;
+
+char log_buff[100];
+
+void SD_wlog(char* mess);
+

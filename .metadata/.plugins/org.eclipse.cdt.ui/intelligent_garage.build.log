@@ -1,0 +1,10 @@
+14:03:33 **** Incremental Build of configuration Debug for project intelligent_garage ****
+make -j32 all 
+arm-none-eabi-size  intelligent_garage.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37564	    124	   3964	  41652	   a2b4	intelligent_garage.elf
+Finished building: default.size.stdout
+ 
+
+14:03:33 Build Finished. 0 errors, 0 warnings. (took 920ms)
+

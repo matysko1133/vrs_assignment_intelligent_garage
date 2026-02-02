@@ -1,0 +1,21 @@
+/*
+ * matus.c
+ *
+ *  Created on: Jan 14, 2026
+ *      Author: ondru
+ */
+
+#include "matus.h";
+
+void SD_wlog(char* mess){
+	RTC_TimeTypeDef sTime;
+	RTC_DateTypeDef sDate;
+
+	HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN);
+	HAL_RTC_GetDate(&hrtc, &sDate, RTC_FORMAT_BIN); //get actual RTC date&time
+
+	char final_txt[128];
+	sprintf(finel_txt, "%02d.%02d.20%02d %02d:%02d:%02d - %s\n")
+
+
+}

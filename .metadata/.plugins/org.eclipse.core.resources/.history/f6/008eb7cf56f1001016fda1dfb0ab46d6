@@ -1,0 +1,15 @@
+/*
+ * matus.c
+ *
+ *  Created on: Jan 14, 2026
+ *      Author: ondru
+ */
+
+#include "matus.h";
+
+void SD_wlog(char* mess){
+	RTC_TimeTypeDef sTime;
+	RTC_DateTypeDef sDate;
+
+
+}

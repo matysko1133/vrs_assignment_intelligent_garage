@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;intelligent_garage/Core/Inc/matus&apos; to &apos;matus.h&apos;" description="Rename resource &apos;matus&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/matus" name="matus.h" stamp="1768398816105" updateReferences="true"/>
+</session>
