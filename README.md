@@ -27,17 +27,14 @@ Projekt je rozdelený na 2 "podprojekty", 1 je pre STM s displejom (**display_ua
 * **Displej**
   Poskytuje spätnú väzbu pre používateľa a zobrazuje textové informácie o stave garáže.
 
-* **Senzor polohy garážových dverí**
-  Slúži na detekciu stavu dverí (otvorené / zatvorené).
-
 * **Senzory prítomnosti vozidla**
-  Dva senzory – jeden umiestnený **vnútri garáže** a jeden **pred garážou**. Slúžia na detekciu prítomnosti vozidla (predpokladané riešenie: ultrazvukové senzory).
+  Dva ultrazvukové senzory – jeden umiestnený **vnútri garáže** a jeden **pred garážou**. Slúžia na detekciu prítomnosti vozidla.
 
 * **Tlačidlo (Manual mode)**
   Umožňuje manuálne otvorenie alebo zatvorenie garáže nezávisle od automatickej logiky systému.
 
 * **SD karta a čítačka**
-  Slúži na ukladanie dát o vjazdoch a výjazdoch vozidla do/z garáže (kapacita do 32 GB).
+  Slúži na ukladanie dát o vjazdoch a výjazdoch vozidla do/z garáže.
 
 ---
 
@@ -49,7 +46,8 @@ Po zapnutí systému prebehne inicializačná fáza, počas ktorej:
 
 * sa nastaví počiatočný stav systému,
 * na displeji sa zobrazí úvodná správa,
-* signalizuje sa zatvorený stav garážových dverí (červená LED).
+* signalizuje sa zatvorený stav garážových dverí (červená LED),
+* nastaví sa log systémovej inicializácie pre SD kartu.
 
 ---
 
@@ -61,29 +59,28 @@ Systém nepretržite sleduje stav senzorov a reaguje podľa aktuálnej situácie
 
 * Ak je vozidlo detegované vo vnútri garáže:
 
-  * na displeji sa zobrazí hlásenie **„Prejazd obsadený“**,
-  * aktivuje sa červená LED,
-  * automatické otváranie garáže nie je povolené.
+  * je aktivovaná červená LED,
+  * automatické otváranie garáže nie je povolené,
+  * garáž sa zvnútra otvára iba manuálne tlačidlom.
 
 #### Detekcia vozidla pred garážou
 
 * Ak je vozidlo detegované pred garážou a garáž nie je obsadená:
 
-  * systém začne proces otvárania garážových dverí,
-  * na displeji sa zobrazí správa **„Otvára sa…“**.
+  * systém začne otvárať bránu,
+  * na displeji sa zobrazí správa **„IN PROGRESS…“**.
 
 #### Otvorená garáž
 
 * Po úplnom otvorení dverí:
 
-  * systém zobrazí hlásenie **„Prejazd voľný“**,
+  * displej zobrazí hlásenie **„OPEN“**,
   * aktivuje sa zelená LED.
 
 #### Zatváranie garáže
 
-* Ak je garáž otvorená a nie je detegovaný dôvod na jej ponechanie otvorenej:
-
-  * systém začne proces zatvárania garážových dverí.
+* Ak je garáž otvorená a auto príde dovnútra, po 2 sekundách sa zavrú dvere
+* Ak sa auto rozhodne po otvorení garáže nevôjsť dnu, garáž sa po 20 sekundách zavrie.
 
 #### Manuálny režim
 
@@ -94,4 +91,4 @@ Systém nepretržite sleduje stav senzorov a reaguje podľa aktuálnej situácie
 
 ## Záznam dát
 
-Každý prejazd vozidla (vjazd alebo výjazd) je zaznamenaný do .csv periodicky posielaneho na SD kartu.
+Každý prejazd vozidla (vjazd alebo výjazd) je zaznamenaný do RAM frontu a odtiaľ, ak je systém stabilný, sa zapíše na SD kartu v .txt formáte.
